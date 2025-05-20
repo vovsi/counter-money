@@ -1,0 +1,29 @@
+﻿<Window x:Class="CounterMoney.VerifyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:CounterMoney"
+        mc:Ignorable="d"
+        Title="VerifyWindow" Height="300" Width="520">
+    <StackPanel Orientation="Vertical">
+
+        <ListView Name="daysListView" Height="240" MouseDoubleClick="DaysListMouseDoubleClick">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Дата" Width="80" DisplayMemberBinding="{Binding Path=Date, StringFormat='dd.MM.yyyy'}" />
+                    <GridViewColumn Header="Отработано" Width="80" DisplayMemberBinding="{Binding TimeWorkText}" />
+                    <GridViewColumn Header="Отработано (сек)" Width="100" DisplayMemberBinding="{Binding SecondsWork}" />
+                    <GridViewColumn Header="Перерыв (сек)" Width="90" DisplayMemberBinding="{Binding SecondsPause}" />
+                    <GridViewColumn Header="Тип" Width="70" DisplayMemberBinding="{Binding Type}" />
+                    <GridViewColumn Header="Вериф" Width="50" DisplayMemberBinding="{Binding Verify}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Label>Всего:</Label>
+            <Label Name="allTime"></Label>
+        </StackPanel>
+    </StackPanel>
+</Window>

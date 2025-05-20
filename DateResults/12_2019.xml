@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Days>
+  <Configs>
+    <Date info="Дата">12.2019</Date>
+    <DollarRateUAH info="Курс доллара к гривне">24,15</DollarRateUAH>
+    <RecommendMaxPauseMin info="Рекомендованная пауза за весь день (максимальная) в минутах">60</RecommendMaxPauseMin>
+    <ElaborationDays info="Запланированное число дополнительных дней (в месяц)">1</ElaborationDays>
+    <TakeMin info="Отнять минут (на случай учитывания демо) (за текущий месяц)">0</TakeMin>
+    <SalaryRateUsd info="Заработная ставка в долларах">400</SalaryRateUsd>
+    <HoursRateOfDay info="Норма часов в день">7</HoursRateOfDay>
+  </Configs>
+  <Day_1>
+    <SecondsWork verify="True">25200</SecondsWork>
+    <SecondsPause>25</SecondsPause>
+    <Type>1</Type>
+  </Day_1>
+  <Day_2>
+    <SecondsWork verify="True">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_2>
+  <Day_3>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_3>
+  <Day_4>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_4>
+  <Day_5>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_5>
+  <Day_6>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_6>
+  <Day_7>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>1</Type>
+  </Day_7>
+  <Day_8>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>1</Type>
+  </Day_8>
+  <Day_9>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_9>
+  <Day_10>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_10>
+  <Day_11>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_11>
+  <Day_12>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_12>
+  <Day_13>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_13>
+  <Day_14>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>1</Type>
+  </Day_14>
+  <Day_15>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>1</Type>
+  </Day_15>
+  <Day_16>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_16>
+  <Day_17>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_17>
+  <Day_18>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_18>
+  <Day_19>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_19>
+  <Day_20>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_20>
+  <Day_21>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>1</Type>
+  </Day_21>
+  <Day_22>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>1</Type>
+  </Day_22>
+  <Day_23>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_23>
+  <Day_24>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_24>
+  <Day_25>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_25>
+  <Day_26>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_26>
+  <Day_27>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_27>
+  <Day_28>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>1</Type>
+  </Day_28>
+  <Day_29>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>1</Type>
+  </Day_29>
+  <Day_30>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_30>
+  <Day_31>
+    <SecondsWork verify="False">0</SecondsWork>
+    <SecondsPause>0</SecondsPause>
+    <Type>0</Type>
+  </Day_31>
+</Days>

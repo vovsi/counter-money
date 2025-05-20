@@ -1,0 +1,72 @@
+﻿<Window x:Class="CounterMoney.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:CounterMoney"
+        mc:Ignorable="d"
+        Title="MoreMoreMoney" Height="200" Width="525">
+    <Grid>
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button Content="Генератор дней" Name="generatorDaysBtn" Click="OpenGeneratorDaysWindow" Width="100px" Height="20px" />
+            <Button Content="Планировка" Name="planningBtn" Click="OpenPlanningWindow" Width="75px" Height="20px" />
+            <Button Content="Конфигурации" Name="configBtn" Click="OpenConfigWindow" Width="100px" Height="20px" />
+            <Button Content="Перезагрузка" Name="restartBtn" Click="RestartApplication" Width="80px" Height="20px" />
+            <Button Content="Верификация" Name="verifyBtn" Click="OpenVerifyWindow" Width="80px" Height="20px" />
+        </WrapPanel>
+        <Grid>
+            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Height="50px" gif:ImageBehavior.AnimatedSource="/gif/crazy.gif" />
+                    <ToggleButton Name="counterToggleBtn" Checked="StartCounters" Unchecked="StopCounters" FontSize="16" Content="Старт" Width="70px" Height="30px" Foreground="#FF4D4D4D" BorderBrush="Black" Background="#FFE2E2E2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+                </WrapPanel>
+                <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <WrapPanel Visibility="Visible" Name="blockBonus" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <WrapPanel.Background>
+                            <RadialGradientBrush RadiusX="0.6" RadiusY="0.4" Center="0.5,0.5" GradientOrigin="0.5,0.5" Opacity="0.8">
+                                <RadialGradientBrush.RelativeTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                        <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                        <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </RadialGradientBrush.RelativeTransform>
+                                <GradientStop Color="#FFFFDC00" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </RadialGradientBrush>
+                        </WrapPanel.Background>
+                        <Image Height="50px" gif:ImageBehavior.AnimatedSource="/gif/bonus.gif" />
+                        <Label Name="bonusMoneyLabel" Height="50px" ToolTip="Заработано бонусов за сегодня (грн)" Content="+0,00 ₴" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="32">
+                            <Label.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFFF5D00" Offset="0"/>
+                                    <GradientStop Color="#FFFFF300" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Label.Foreground>
+                        </Label>
+                        <Label Name="bonusTimeLabel" Height="50px" ToolTip="Бонусное время за сегодня" Content="(0ч.00м.)" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="20">
+                            <Label.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFFF5D00" Offset="0"/>
+                                    <GradientStop Color="#FFFFF300" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Label.Foreground>
+                        </Label>
+                    </WrapPanel>
+                    <WrapPanel Orientation="Horizontal" >
+                        <Label Name="currentMoney" ToolTip="Заработано после старта (грн)" Content="+0,00 ₴" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="32" Foreground="#FF13D600" Margin="0,0,84,0"/>
+                        <Label Name="currentMoneyOfDay" ToolTip="Заработано за весь день (грн)" Content="За день: 0,00 ₴" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16" Foreground="#FF0298B0"/>
+                    </WrapPanel>
+                    <WrapPanel Orientation="Horizontal" Margin="0,-18,0,0" >
+                        <Label Name="currentTime" ToolTip="Проработано времени после старта" Content="+0ч.00м." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16" Width="125px" Foreground="#FF10B600" Margin="0,0,100,0"/>
+                        <Label Name="pauseTimeOfDay" ToolTip="Времени перерыва за весь день" Content="[0ч.00м.]" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16" Foreground="#FFC1C1C1"/>
+                    </WrapPanel>
+                </WrapPanel>
+            </WrapPanel>
+            <ProgressBar Value="0" Name="progressTimeWork" Height="10px" VerticalAlignment="Bottom" />
+            <Label Name="progressTimeWorkLabel" ToolTip="Проработанное время/Запланированное (процент остатка от плана)" Content="0ч.0м./0ч.0м. (0.0%)" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="30px" Margin="0,0,0,-10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF006B9C" />
+        </Grid>
+    </Grid>
+</Window>

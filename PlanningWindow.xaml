@@ -1,0 +1,57 @@
+﻿<Window x:Class="CounterMoney.PlanningWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CounterMoney"
+        mc:Ignorable="d"
+        Title="PlanningWindow" Height="400" Width="300">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-6,0,0">
+            <Label>Запланировано доп. дней: </Label>
+            <Label Name="daysInPlanLabel">0</Label>
+        </StackPanel>
+        <StackPanel Margin="0,-14,0,0">
+            <Grid Width="200">
+                <Label>Норма:</Label>
+                <Label Name="rateTimeLabel" HorizontalAlignment="Right">0рд. 0ч. 0м.</Label>
+            </Grid>
+        </StackPanel>
+        <StackPanel Margin="0,-14,0,0">
+            <Grid Width="200">
+                <Label>Уже отработано:</Label>
+                <Label Name="workedTimeLabel" HorizontalAlignment="Right">0рд. 0ч. 0м.</Label>
+            </Grid>
+        </StackPanel>
+        <StackPanel Margin="0,-14,0,0">
+            <Grid Width="200">
+                <Label>Нужно отработать:</Label>
+                <Label Name="needTimeLabel" HorizontalAlignment="Right">0рд. 0ч. 0м.</Label>
+            </Grid>
+        </StackPanel>
+        <StackPanel Margin="0,-14,0,0">
+            <Grid Width="200">
+                <Label>Осталось отработать:</Label>
+            <Label Name="leftTimeLabel" HorizontalAlignment="Right">0рд. 0ч. 0м.</Label>
+            </Grid>
+        </StackPanel>
+        <StackPanel Margin="0,-14,0,0">
+            <Grid Width="200">
+                <Label>Осталось отработать</Label>
+            </Grid>
+        </StackPanel>
+        <StackPanel Margin="0,-14,0,0">
+            <Grid Width="200">
+                <Label>(уч. норму наперед):</Label>
+                <Label Name="leftTimeIncludeFutureRateLabel" HorizontalAlignment="Right">0рд. 0ч. 0м.</Label>
+            </Grid>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-14,0,0">
+            <Label FontWeight="Bold" FontSize="14">Распланируйте доп:</Label>
+            <Label Name="leftTimeForPlanningLabel" FontWeight="Bold" FontSize="14">0ч. 0м.</Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+            
+        </StackPanel>
+    </StackPanel>
+</Window>

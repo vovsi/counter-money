@@ -1,0 +1,42 @@
+﻿<Window x:Class="CounterMoney.ConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CounterMoney"
+        mc:Ignorable="d"
+        Title="Config" Height="255" Width="300">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <Label>Дата (месяц, год)</Label>
+                <TextBox Name="dateTextBox" Width="130px" HorizontalAlignment="Right" IsEnabled="False" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label>Курс доллара к гривне</Label>
+                <TextBox Name="dollarRateUAHTextBox" Width="100px" HorizontalAlignment="Right" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label>Реком. пауза в день (мин)</Label>
+                <TextBox Name="recommendMaxPauseMinTextBox" Width="84px" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label>Заплан. доп. дней (в месяц)</Label>
+                <TextBox Name="elaborationDaysTextBox" Width="75px" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label>Отнять мин. (демо) (за тек. месяц)</Label>
+                <TextBox Name="takeMinTextBox" Width="40px" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label>Заработная ставка в долларах</Label>
+                <TextBox Name="salaryRateUsdTextBox" Width="60px" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label>Норма часов в день</Label>
+                <TextBox Name="hoursRateOfDayTextBox" Width="115px" />
+            </StackPanel>
+            <Button Name="saveBtn" Click="OnSaveClick" Content="Сохранить" Width="80px" Margin="0,10,0,0" />
+        </StackPanel>
+    </Grid>
+</Window>
