@@ -20,7 +20,7 @@ A desktop application built with WPF (.NET) to help you track your working hours
 
 1. Clone the repository:  
 ```bash
-git clone https://github.com/vovsi/counter-money.git
+git clone https://github.com/vovsi/sallary-time-tracker.git
 ```
 2. Open the solution in Visual Studio.
 3. Build and run the project.
